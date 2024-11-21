@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto:wght@400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --light-orange-color: #f6f6f6;
+    --light-grey-color: #efefee;
+    --light-Slate-grey: #577592;
+    --Dark-Slate-grey: #556271;
+    --dark-red-color: #ff4141;
+}
+
+/*----------- utility class start ------------ */
+.justify-center{
+    display: flex;
+    justify-content: center;
+    
+}
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.mb{
+    margin-bottom: 1.5rem;
+}
+
+.border{
+    border: 2px solid red;
+}
+/*----------- utility class end ------------ */
+
+main{
+    background-color: var(--light-grey-color);
+    height: 100vh;
+    /* overflow: auto; */
+}
+
+/* ======================================================================================
+                                    Header > Nav
+ ===================================================================================== */
+
+.nav-container{
+    background-color: var(--light-orange-color);
+    box-shadow: 0 2px 5px 0 #a4a4a4;
+
+    /* display: flex;📗🔖 still appling from utility class
+    justify-content: center; */
+    /* margin-bottom: 1.5rem; still applying from utility class */
+}
+.navSearchIcon{
+    color: var(--dark-red-color);
+    font-size: 1.3rem;
+
+}
+.projectTitle {
+    color: var(--Dark-Slate-grey);
+    cursor: pointer;
+}
+.penIcon, .searchIcon{
+    color: var(--light-Slate-grey);
+    font-size: 1.2rem;
+}
+nav{
+    width: 75vw;
+    padding-block: 1rem;    
+    display: flex;
+    justify-content: space-between;
+   
+}
+#copy-Btn{
+    background-color: var(--dark-red-color);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0.3rem 0.5rem;
+}
+#copy-Btn:hover{
+    background-color: #e31d1d;
+    /* box-shadow: 0 3px 5px 0 rgb(172, 172, 172); */
+    cursor: pointer;
+}
+ #copy-Btn:active {  /*🔖📗 when this element is clicked then press feel. or its css apply and instant remove. just for noticed and feel*/
+    /* transform: scaleX(0.95); Slightly shrink the button from right and left */
+    /* transform: scaleY(0.95); Slightly shrink the button from top and bottom */
+    transform: scale(0.9); /*🔖📗 Slightly shrink the button or little down then it feel press */
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2); /* Darken the button to create the pressed effect */
+    /* border: 2px solid rgb(9, 203, 9); */
+  }
+
+/* ======================================================================================
+                                   form > Search
+ ===================================================================================== */
+
+.form-container{
+   /* display: flex; 📗🔖 still appling from utility class
+   justify-content: center; */
+
+   /* margin-bottom: 1.5rem; still applying from utility class */
+   
+}
+
+form{
+  width: 35vw;
+  padding-block: 1rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; 
+  border-radius: 0.4rem;
+  /* border: 2px solid blue; */
+
+}
+input{
+    width: 80%;
+    border: none;
+    outline: none;
+    /* padding-block: 1rem; */
+    /* border: 2px solid red; */
+}
+input::placeholder{
+   color: var(--light-Slate-grey);
+   font-family: "Poppins", sans-serif ;
+   font-size: 1rem;
+}
+input[type="text"] {
+    color: var(--light-Slate-grey);
+    font-family: "Poppins", sans-serif ;
+    font-size: 1rem;
+}
+
+/* ======================================================================================
+                                    Words body
+ ===================================================================================== */
+.words-super-container{
+    /* border: 2px solid blue; */
+   
+
+    /* display: flex; 🔖still appling from utility class
+    justify-content: center; */
+    
+    /* margin-bottom: 1.5rem; 🔖still applying from utility class */
+}
+
+.words-body{
+    display: none; /*with display in same element then display not work bcz two display */
+    height: 50vh;
+    width: 45vw;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.4rem;
+    font-family: "Roboto", sans-serif;
+
+    /* position: relative; */
+    /* border: 2px solid yellowgreen; */
+
+    overflow: auto;  
+    /* display: flex;
+    flex-wrap: wrap;
+    align-content: start; 
+    gap: 0.7rem; */
+} 
+
+.word{
+     display: inline-block;  /* this css property is for as much content element have that much width takes.*/
+    /* width: fit-content; */ 
+    padding: 0.6rem 1rem;
+    margin: 0.4rem 0.3rem;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
+    color: var(--light-Slate-grey);
+    
+    /* align-self: start; 
+    align-self property apply only in child element 📗🔖Strech child controll and give as much content inside them.*/
+    /* same work is done by 📗🔖align-content: start; means strech remove and this also done one more extra work space btw lines or rows*/
+}
+
+
+/* ======================================================================================
+                                    Spinner or loader
+ ===================================================================================== */
+
+/* #spinner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+} */
+ /* .loader-container{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+ 
+.loader {  /*📗🔖 how spiner or loader created. */
+    display: none;
+
+    width: 120px; /*📗🔖 this is how create empty hole circle by border property */
+    height: 120px;
+    border: 10px solid var(--light-Slate-grey);
+    border-radius: 50%;
+    border-top: 9px solid var(--dark-red-color);  /* new property border-top */
+    
+     /* display: flex; 📗🔖 still appling from utility class
+   justify-content: center; */
+
+   
+    /* animation: spin 2s linear infinite; */
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+  }
+  
+
+  @keyframes spin {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(360deg); 
+    }
+  }
+
+
+
+/* ======================================================================================
+                                    copy toast
+ ===================================================================================== */
+.fa-circle-check{
+    color: rgb(8, 218, 8);
+}
+
+.toast{
+  display: none;
+  position: absolute;  /* set to html above to all*/
+  top: 20%;
+  left: 80%;
+  background-color:white;
+  color: black;
+  padding: 0.5rem;
+  width: max-content;  /*🔖📗 element width as much content*/
+  border-radius: 5px;
+  font-family: "Robotto", sans-serif;
+  box-shadow: 0 1px 5px 0 rgb(0, 0, 0, 0.15);
+}
+
+
+
+
+/* ======================================================================================
+                                    media query
+ ===================================================================================== */
+
+
+/* ---- 3rd Breakpoint ----------- Mobile large */
+
+/*📗🔖  till 430px screen this css apply then above this apply on this element other. */
+
+/*📗🔖 when you specify a media type (like screen), you need to include and keyword before defining the condition.*/4
+
+/* @media screen and (max-width:450px) {  
+
+    form{
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 0.4rem;
+
+        width: 75vw;
+        padding: 1rem 0.6rem;
+         
+    };
+    
+    input::placeholder{
+        color: var(--light-Slate-grey);
+        font-family: "Poppins", sans-serif ;
+        font-size: 0.7rem;
+    }
+     
+    .words-body {
+        width: 80vw;
+    }
+ 
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

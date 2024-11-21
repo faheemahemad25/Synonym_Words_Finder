@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Project-14_SynonymWordsFinder/style.css">
+    <link rel="stylesheet" href="/Project-14_SynonymWordsFinder/media-query.css">
+    <title>Synonym Words Finder</title>
+    <!-- font awesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <main>
+        <!-- header or nav -->
+        <div class="nav-container justify-center mb ">
+            <nav>
+                <h2 class="projectTitle" onclick="window.location.reload()"><i class="fa-solid fa-magnifying-glass navSearchIcon"></i>WORD FIND</h2> <!--🔖📗 icons and i element is used in two way 1st-> pass inside element and 2nd-> position relative and position absolute-->
+                <button id="copy-Btn">COPY <i class="fa-solid fa-copy"></i></button> <!--🔖📗 icons and i element is used in two way 1st-> pass inside element and 2nd-> position relative and position absolute-->
+            </nav>
+        </div>
+        <!-- search or form -->
+        <div class="form-container justify-center mb ">
+            <form action="" id="search-form">
+                <i class="fa-solid fa-pen-nib penIcon"></i>
+                <input type="text" placeholder="Enter your word to find Synonyms" id="inputEle">
+                <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+            </form>
+        </div>
+        <!-- <div id="spinner">
+           <img src="/Project-14_SearchSynonymsWords/assests/spinner.svg" alt="">
+        </div> -->
+        
+        <!-- loader or spinner -->
+        <div class="loader-container justify-center mb">
+            <div class="loader"></div>
+        </div>
+        <!-- word body -->
+        <div class="words-super-container justify-center mb">
+                <div class="words-body">
+                    <!-- span is inline element so inline element height and width can be defiend. first change display:block; or inline-block; -->
+                        <!-- <span class="word">lorem</span> 
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lor ncn cem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorljjndem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">gdgddd</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorkjfjbuem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lor-the-em</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorkjfjbuem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lor-the-em</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span>
+                        <span class="word">lorem</span> -->
+                </div>
+        </div>
+        <div class="toast">Copied to Clipboard <i class="fa-regular fa-circle-check"></i></div>
+    </main>
+
+
+    <script src="/Project-14_SynonymWordsFinder/script.js"></script>
+</body>
+
+</html>

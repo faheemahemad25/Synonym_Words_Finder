@@ -1,0 +1,49 @@
+
+/* ======================================================================================
+                                    media query
+ ===================================================================================== */
+
+
+/* ---- 3rd Breakpoint ----------- Mobile large */
+/*📗🔖  till 430px screen this css apply then above this apply on this element other. */
+
+@media screen and (max-width:430px) {  /*📗🔖 when you specify a media type (like screen), you need to include and keyword before defining the condition.*/
+
+  form {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      border-radius: 0.4rem;
+
+      /* addition in media screen */
+      width: 75vw;
+      padding: 1rem 0.6rem;
+       
+
+  }
+  
+  input::placeholder{
+      color: var(--light-Slate-grey);
+      font-family: "Poppins", sans-serif ;
+      font-size: 0.7rem;
+   }
+
+  .words-body {
+      width: 80vw;
+  }
+
+  .toast{
+    position: absolute;  /* set to html above to all*/
+    top: 26%;
+    left: 20%;
+    background-color:white;
+    color: black;
+    padding: 0.3rem;
+    width: max-content;  /*🔖📗 element width as much content*/
+    border-radius: 5px;
+    font-family: "Robotto", sans-serif;
+    box-shadow: 0 1px 5px 0 rgb(0, 0, 0, 0.15);
+  }
+
+}
